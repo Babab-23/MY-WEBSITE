@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop @Football.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body { 
+  margin:0;
+  font-family: Arial,Arial, Helvetica, sans-serif;
+    }
+    .topnav {
+        overflow:hidden;
+        background-color:orange;
+    }
+    .topnav a{
+        float:left;
+        color:deepink;
+        text-align:center;
+        padding:14px 16px;
+        text-decoration:none;
+        font-size:17px;
+    }
+    .topnav a:hover{
+        background-color:blueviolet;
+        color:deepskyblue
+    }
+    .topnav a.active{
+        background-color: yellowgreen;
+        color:red;
+    }
+</style>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="logo">
+            <h1>Shop @Football.com</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Products Section-->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <!--Slide Show-->
+                <section>
+                <img  class="mySlides" src="data:image/jpeg;base64,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"
+                    style="height:200px; width:400px;" alt="Football Jerseys">
+                <h3>Football Jersey</h3>
+                <p>$50</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img  class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0epzW5BvN5BYApM8tAQX0tZPzE9g587MoHQ&s" style="height:200px; width:400px;"
+                    alt="Football Boots">
+                <h3>Football Boots</h3>
+                <p>$100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img  class="mySlides" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA81BMVEUoJFD///+f9hEAADTW1twVDkT8/P5rbH+ysbkVEURjYnfk4+gAACywr7S+vscAACkhHUs4OFRhYH4nIlAmIFCl/wB0dI0PCUckG1Gi+wspJlAbAFIhFlEAADcAAAAzQEwiD1GV5RkjGVGR3h0IAFJZWXWbm6kuLVMAAD0AAA0UEEPLytFYWF708/ZlY4G4uLtNSmotLk4+WUlMcUJnljh7vDKFzCuEyi50rzVafTtCaEY4SUxQfEFhjTlvpzQ9VElehz2a7hVEX0cxOU4/O2E5SUuGhZQLAEdqnTZHRl0kM05PT1w1QkweCFExLVmM1SQeKU8ZqNu/AAAEAElEQVR4nO3ce1faMBzGcawiIF5wtNomVcJFcTrclIsoIIrToRPZ+381o+qOm0ITJfWXeZ7v//X0c9KklEZiMYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEdJWKR18qSwjMbCWib4sREjfmZuajbia9mqETzs7NRB+EEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCKEO4Ud/M5NeSmpou0z4dk0iXN7cmJ2+HZsOKBWuEJ6bniCE0PwghND8IITQ/CD8+MLPqenbpdyaKBPufVmYvgTlw5NMWElrqLKVMleop09xCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCM4T7BgvTSxr6+s01V7i8uaghwt2leMsN4f8QhBCaH4QQmp9uoe0+RLrR6580ClnM9YW9mht1URaiYAhSn5D5g4PDaq3eaAwbR83jk5YQLovwzFXTJnR5rt3Me47jBTmO1eicMJGlN2oSMuG2jyzHs57ynPxpjxeiPX2F9AizvNs8d6xned7w7EZQj6IOIbN5deh5z4GB8bx5K6ImSNIhtPlxcZwvIFr1lojaEJ4OIW9PAgbVcz7phapByHvDEKBlnR6Q3jWmFjL/oh4K9Ky2MHift1yY5Z0wX0DMt/z3oExoWiETvbBJeJ9z6hL+I/DUY8hrL+6DL0exRXjjn1LIxGH4MvMwiH3CmTilMCuO5cDRTIzRXaYSYXIx/HD3oKkgtJwu3T1RJpwNPZr5XYWLNFhruKnCtZ3ww/3euYrQOyq9D2dMEqEreWskqirA0UQ0VVhZCV8DswWVhSaIky2m4cI9yVJq2x1FoU+2mIYLE5JpaNs1RWHBTOH8huS81MeQmymU3CtG+arzsGTmPPwu/d9P1bW0aOZaurwhO5r5h3mlO36dvwdmbCHCSlm+w8C/bCgJa0Z+prn6IT/czvblD0+jqzRGt99ksjDJVDaJDKoqwGHGwGeLObXfWPNbRwrPh5Tf1EwSzl0r7tTiZ/IhLN4QbooaL5zf+7mrdjzzb6WD6J3RfWabIKwsX68r/wVeldwwvDrlEI4VprdXFUcwyLX7kmu055v1fWklmci85ncsgq+Ew4D5Y5vyRwVfCNPJtfL6K89IXE6eil6+wyiv0ZEw/bS8VNLJq4W79def0KA16Yv9EbBMC4xl9tceSyQWtu7i8TftBRUX/XHvDz1vWCX8NPNYav2xeDyVevNW10KsO3SeGx2rmaO8T2iN2YODTtH5C+k5Vr3HSFdR3bniV7UebMa4zyr2c+6HGcA/2YIPbtu1/mn/7ISVuClbhnTGWNbnvFQqce7GqPdgRBV7jPo8EEIIIYQQQgghhBBCCCGEEEIIIYQQQgiR9RsWVZs5ipfmVAAAAABJRU5ErkJggg==" style="height:200px; width:400px;" 
+                    alt="Football">
+                <h3>Football </h3>
+                <p>$30</p>
+                <button>Add to Cart</button>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        // Automatic SlideShow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <!--Footer-->
+    <footer class="footer">
+        <p>&copy:2024 Shop @Football.com</p>
+    </footer>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
