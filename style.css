@@ -1,0 +1,69 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    color:blue;
+}
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background-color: orange;
+    color:white;
+}
+.nav ul {
+    list-style:none;
+    display:flex;
+    gap: 15px;
+}
+.nav a {
+    color:white;
+    text-decoration: none;
+}
+.hero {
+    text-align:center;
+    padding:50px 20px;
+    background-color:red;
+}
+.hero .cta {
+    text-align:center;
+    padding:10px 20px;
+    margin-top: 20px;
+    background-color:green;
+    color:white;
+    text-decoration: none;
+    border-radius:5px;
+}
+.products {
+    padding:20px;
+    text-align:center;
+}
+.product-grid {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+.product {
+    border: 1px solid black;
+    padding:10px;
+    width:150px;
+    border-radius:5px;
+    text-align:center;
+}
+.product img {
+    max-width:100%;
+    height:auto;
+}
+.about, .contact {
+    padding:20px;
+    background-color:brown;
+    text-align:center;
+}
+.footer {
+    text-align:center;
+    padding:10px;
+    background-color:purple;
+    color:white;
+}
